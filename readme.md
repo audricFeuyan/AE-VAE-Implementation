@@ -63,7 +63,7 @@ Les modèles de compression et de génération d'images reposent sur la réducti
 
 | Scénario de Test | Auto-Encodeur Classique (AE) | Auto-Encodeur Variationnel (VAE) |
 | :--- | :--- | :--- |
-| **1. Reconstruction CIFAR-10** | **Excellente netteté** (PSNR $\approx 19.0 \text{ dB}$). | **Bonne netteté**, légèrement plus lisse (effet de la régularisation KL). |
+| **1. Reconstruction CIFAR-10** | **Très bonne netteté** (PSNR $\approx 19.0 \text{ dB}$). | **Bonne netteté**, légèrement plus lisse (effet de la régularisation KL). |
 | **2. Entrée Bruit Pixel Pur** | Produit des artefacts incohérents ou du bruit résiduel. | **Projection fluide** : « Hallucine » une forme structurée proche de CIFAR-10. |
 | **3. Génération Autonome ($z \sim \mathcal{N}(0,I)$)** | **Échec** : Images grises ou formes indéterminées. | **Succès** : Génère de nouvelles images synthétiques cohérentes. |
 
